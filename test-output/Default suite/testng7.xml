@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+    <test name="Test">
+  <parameter name="BrowserName" value="Chrome"/>
+  <classes>
+  <class name="testcases"/>
+  </classes>
+  </test> <!-- Test -->
+   <test name="Test1">
+  <parameter name="BrowserName" value="IE"/>
+  <classes>
+  <class name="testcases"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
