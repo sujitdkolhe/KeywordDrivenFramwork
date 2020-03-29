@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazonepage.testCases">
+      <class name="com.amazonhomepage.SmokeTest">
         <methods>
-          <include name="amezonHomePage"/>
+          <include name="tc_15"/>
+          <include name="tc_16"/>
         </methods>
-      </class> <!-- com.amazonepage.testCases -->
+      </class> <!-- com.amazonhomepage.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

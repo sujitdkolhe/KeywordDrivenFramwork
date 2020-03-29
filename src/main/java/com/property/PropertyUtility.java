@@ -4,16 +4,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import com.amazonepage.StaticVar;
+import com.amazonhomepage.Constants;
 
 public class PropertyUtility {
 
 	public static String getProperty(String key) {
 		String value = null;
 		try {
-			StaticVar.fis = new FileInputStream("Input/amazonsitepath.properties");
+			Constants.fis = new FileInputStream("Input/amazonhome_pagepath.properties");
 			Properties p = new Properties();
-			p.load(StaticVar.fis);
+			p.load(Constants.fis);
 			value = p.getProperty(key);
 		} catch (IOException e) {
 			System.out.println("Unable to load Properties File");
@@ -21,5 +21,5 @@ public class PropertyUtility {
 		}
 		return value;
 	}
-	
+
 }
