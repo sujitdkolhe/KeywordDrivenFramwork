@@ -76,7 +76,7 @@ public class Keyword {
 		Constants.ashot = new AShot();
 		Constants.ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000));
 		java.util.Date date = Calendar.getInstance().getTime();
-		DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd_hh_mm_ss");
 		String fileName=dateFormat.format(date);
 		System.out.println(fileName);
 		Screenshot sc = Constants.ashot.takeScreenshot(Constants.driver);
