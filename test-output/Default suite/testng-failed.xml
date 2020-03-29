@@ -5,8 +5,7 @@
     <classes>
       <class name="com.amazonhomepage.SmokeTest">
         <methods>
-          <include name="tc_15"/>
-          <include name="tc_16"/>
+          <include name="tc_02"/>
         </methods>
       </class> <!-- com.amazonhomepage.SmokeTest -->
     </classes>

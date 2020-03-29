@@ -3,6 +3,10 @@ package com.amazonhomepage;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -71,6 +75,10 @@ public class Keyword {
 	public static void getHomePageFullScreenshot(String fullScreenshot) {
 		Constants.ashot = new AShot();
 		Constants.ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000));
+		java.util.Date date = Calendar.getInstance().getTime();
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+		String fileName=dateFormat.format(date);
+		System.out.println(fileName);
 		Screenshot sc = Constants.ashot.takeScreenshot(Constants.driver);
 		BufferedImage image = sc.getImage();
 		try {
