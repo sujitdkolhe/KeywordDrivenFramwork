@@ -1,3 +1,6 @@
 [0329/011731.359:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\HP\AppData\Local\Temp\scoped_dir16304_338058654\Crashpad: There is not enough space on the disk. (0x70)
 [0329/011731.535:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0329/011731.543:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Users\HP\AppData\Local\Temp\scoped_dir16304_338058654\Crashpad: There is not enough space on the disk. (0x70)
+[0331/124937.419:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0331/124937.435:ERROR:exception_snapshot_win.cc(98)] thread ID 9036 not found in process
+[0331/124937.435:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

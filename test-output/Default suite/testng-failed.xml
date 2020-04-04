@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazonhomepage.SmokeTest">
+      <class name="com.keyworddriven.SmokeTest">
         <methods>
-          <include name="tc_02"/>
+          <include name="openBrowser"/>
+          <include name="CloseAllBrowser"/>
+          <include name="tearTest"/>
+          <include name="tc_40"/>
         </methods>
-      </class> <!-- com.amazonhomepage.SmokeTest -->
+      </class> <!-- com.keyworddriven.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
