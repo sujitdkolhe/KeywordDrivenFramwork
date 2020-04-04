@@ -359,9 +359,32 @@ public class SmokeTest {
 		Keyword.loggerInfo(
 				"verifying by clicking on 'select_your_address' element popup will visible or not and entering text on 'address' box and click on 'Apply tab'");
 	}
-
 	@Test
 	public void tc_40() {
+		try {
+			Keyword.read_Json("src/main/resources/{}ExpectedHelpTopic.json", "Recommended_Topics");
+		} catch (IOException | ParseException e) {
+			System.out.println("Unable to read 'Recommended_Topics' data");
+			e.printStackTrace();
+		}
+		try {
+			Keyword.read_Json("src/main/resources/{}ExpectedHelpTopic.json", "Shipping & Delivery");
+		} catch (IOException | ParseException e) {
+			System.out.println("Unable to read 'Shipping & Delivery' data");
+			e.printStackTrace();
+		}
+		try {
+			Keyword.read_Json("src/main/resources/{}ExpectedHelpTopic.json", "Amazon Prime");
+		} catch (IOException | ParseException e) {
+			System.out.println("Unable to read 'Amazon Prime' data");
+			e.printStackTrace();
+		}
+		Keyword.loggerInfo("all test cases in this method to read JSON file");
+
+	}
+	
+	@Test
+	public void tc_41() {
 		Keyword.hoverOnElement("CSS", PropertyUtility.getProperty("openMenu"));
 		Keyword.hoverOnElement("CSS", PropertyUtility.getProperty("amazon"));
 		Keyword.hoverOnElement("CSS", PropertyUtility.getProperty("tryPrime"));
@@ -439,7 +462,7 @@ public class SmokeTest {
 //	}
 
 	@Test
-	public void tc_41() {
+	public void tc_42() {
 		Keyword.getLogo("CSS", PropertyUtility.getProperty("COVID-19"));
 		Keyword.loggerInfo("verifying 'COVID-19'label visible or not");
 	}
